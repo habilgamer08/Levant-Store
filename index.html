@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEVANTSTORE - Top Up Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>LEVANT<span>STORE.</span></h1>
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#games">Game</a>
+      <a href="#order">Top Up</a>
+    </div>
+
+    <a href="#games" class="nav-button">Top Up</a>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <span class="tag">⚡ WEBSITE TOP UP GAME</span>
+      <h2>TOP UP GAME <span>CEPAT & MURAH!</span></h2>
+      <p>Top up game favoritmu dengan mudah, cepat dan praktis.</p>
+      <a href="#games" class="primary-button">MULAI TOP UP →</a>
+    </div>
+    <div class="hero-icon">🎮</div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>⚡ Proses Cepat</h3>
+      <p>Pemesanan mudah dan praktis.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔒 Transaksi Aman</h3>
+      <p>Pesanan tercatat dengan jelas.</p>
+    </div>
+    <div class="feature-card">
+      <h3>💎 Harga Terjangkau</h3>
+      <p>Banyak pilihan nominal.</p>
+    </div>
+  </section>
+
+  <section class="game-section" id="games">
+    <div class="section-heading">
+      <span>PILIH GAME FAVORITMU</span>
+      <h2>Game Populer</h2>
+    </div>
+
+    <div class="game-grid" id="gameList"></div>
+  </section>
+
+  <section class="order-section" id="order">
+    <div class="order-container">
+      <div class="section-heading">
+        <span>FORM PEMESANAN</span>
+        <h2>Top Up Game</h2>
+      </div>
+
+      <div class="form-group">
+        <label>Game Dipilih</label>
+        <input id="gameName" type="text" placeholder="Pilih game terlebih dahulu" readonly>
+      </div>
+
+      <div class="form-group">
+        <label>User ID</label>
+        <input id="userId" type="text" placeholder="Masukkan User ID">
+      </div>
+
+      <div class="form-group">
+        <label>Server ID</label>
+        <input id="serverId" type="text" placeholder="Masukkan Server ID jika diperlukan">
+      </div>
+
+      <div class="form-group">
+        <label>Pilih Nominal</label>
+        <div class="product-grid" id="productList"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Metode Pembayaran</label>
+        <select id="payment">
+          <option value="QRIS">QRIS</option>
+          <option value="DANA">DANA</option>
+          <option value="OVO">OVO</option>
+          <option value="GoPay">GoPay</option>
+          <option value="Transfer Bank">Transfer Bank</option>
+        </select>
+      </div>
+
+      <div class="total-box">
+        <p>Total Pembayaran</p>
+        <h2 id="total">Rp 0</h2>
+      </div>
+
+      <button class="checkout-button" id="checkout">
+        PESAN SEKARANG →
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <h2>NEX<span>STORE.</span></h2>
+    <p>Top Up Game Mudah, Cepat dan Praktis.</p>
+    <small>© 2026 NEXSTORE. All Rights Reserved.</small>
+  </footer>
+
+  <script type ="module"src="src/main.js"></script>
+</body>
+</html>
